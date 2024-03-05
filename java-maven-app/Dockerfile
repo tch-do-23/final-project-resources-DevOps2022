@@ -2,7 +2,7 @@ FROM openjdk:8-jre-alpine
 
 EXPOSE 8080
 
-COPY java-maven-app/target/java-maven-app-*.jar /usr/app/java-maven-app.jar
+COPY /var/lib/jenkins/workspace/Final-project-Maven-*.jar /usr/app/java-maven-app.jar
 
 WORKDIR /usr/app
 
